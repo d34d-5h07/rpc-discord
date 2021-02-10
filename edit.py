@@ -15,18 +15,18 @@ def clear():
         _ = system('clear') 
         
 clear()
-print("Connecting to Alvara")
+print("Connecting to Server_Name")
 sleep(1)
 clear()
 print("Coded By Deadshot")
 sleep(1.5)
 clear()
-client_id = '809115126581166143'
+client_id = '1234567890' # Enter YOur Client ID 
 rpc_obj = rpc.DiscordIpcClient.for_platform(client_id) 
 print("RPC connection successful.")
 sleep(1)
 clear()
-print("RPC Running <--> Press CNTRL+C To Stop")
+print("RPC Running <--> Press CTRL+C To Stop")
 time.sleep(1) #the time to start presenting
 start_time = mktime(time.localtime())
 while True:
