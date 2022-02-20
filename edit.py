@@ -1,4 +1,3 @@
-#coded by deadshot
 #www.github/D34D-5H07
 from os import system, name 
 import rpc
