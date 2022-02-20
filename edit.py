@@ -6,11 +6,8 @@ import time
 from time import mktime,sleep
 def clear(): 
   
-    # for windows 
     if name == 'nt': 
         _ = system('cls') 
-  
-    # for mac and linux(here, os.name is 'posix') 
     else: 
         _ = system('clear') 
         
@@ -18,7 +15,7 @@ clear()
 print("Connecting to Server_Name")
 sleep(1)
 clear()
-print("Coded By Deadshot")
+print("Deadshot")
 sleep(1.5)
 clear()
 client_id = '1234567890' # Enter YOur Client ID 
@@ -31,15 +28,15 @@ time.sleep(1) #the time to start presenting
 start_time = mktime(time.localtime())
 while True:
     activity = {
-            "details": "Ark Survival Evolved ",  
+            "details": "Deadshot",  
             "timestamps": {
                 "start": start_time 
             },
             "assets": {
-                "small_text": "Ark Survival Mobile",  # Edit as You Like
-                "small_image": "ark_logo",  # must be the same image key 
-                "large_text": "Alvara OutKast PVE ANZ",  # anything you like
-                "large_image": "alvara1"  # must match the image key
+                "small_text": "text1",  # Edit as You Like
+                "small_image": "image_name",  # must be the same image key 
+                "large_text": "text2",  # anything you like
+                "large_image": "image_name2"  # must match the image key
             }
         }
     rpc_obj.set_activity(activity)
